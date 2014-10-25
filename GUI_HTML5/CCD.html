@@ -1,0 +1,548 @@
+<html>
+    <head>
+        <title>CS6400 CCD Viewer</title>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+        <meta name="description" content="" />
+        <meta name="keywords" content="" />
+        <!--[if lte IE 8]><script src="css/ie/html5shiv.js"></script><![endif]-->
+        <script src="js/jquery.min.js"></script>
+        <script src="js/skel.min.js"></script>
+        <script src="js/skel-layers.min.js"></script>
+        <script src="js/init.js"></script>
+        <noscript>
+            <link rel="stylesheet" href="css/skel.css" />
+            <link rel="stylesheet" href="css/style.css" />
+            <link rel="stylesheet" href="css/style-desktop.css" />
+            <link rel="stylesheet" href="css/style-wide.css" />
+        </noscript>
+    </head>
+    <body class="left-sidebar">
+        <!-- Wrapper -->
+        <div id="wrapper">
+            <!-- Content -->
+            <div id="content">
+                <div class="inner">
+                    
+                    <!-- Section -->
+                    <a name="BasicInfo"/>
+                    <article class="box post post-excerpt">
+                        <header>
+                            <h2><a href="#">Patient Info and Purpose</a></h2>
+                        </header>
+                        <div class="info">
+                            <span class="date">Basic Info</span>
+                        </div>
+                        <p>
+                        Patient Name: <b>Marla M. Dixon</b><br/>
+                        DOB: <b>1968/03/04</b></br/>
+                        Address: 1221 Middle Street, Atlanta, GA 30308<br/>
+                        <hr/>
+                        Author: <b>Dr Henry Seven</b><br/>
+                        Clinic: Good Health Clinic<br/>
+                        Address: 1054 Atlantic Dr, Atlanta, GA, 30318<br/>
+                        </p>
+                    </article>
+                    <!-- Section -->
+                    <a name="Problem" />
+                    <article class="box post post-excerpt">
+                        <header>
+                            <h2><a href="#">Problems</a></h2>
+                        </header>
+                        <div class="info">
+                            <span class="date">Problems</span>
+                        </div>
+                        <list listType="ordered">
+                            <li><content ID="problem1">Diabetes Mellitus</content></li>
+                            <li><content ID="problem2">Essential Hyptertension</content></li>
+                            <li><content ID="problem3">Simple chronic bronchitis</content></li>
+                            <li><content ID="problem4">Coronary artery disease</content></li>
+                        </list>
+                    </article>
+                    
+                    <!-- Section -->
+                    <a name="Encounter" />
+                    <article class="box post post-excerpt">
+                        <header>
+                            <h2><a href="#">Encounters</a></h2>
+                        </header>
+                        <div class="info">
+                            <span class="date">Encounters</span>
+                        </div>
+                        <p>
+                        
+                        <table style="border-width:1px;border-color:gray;" width="100%">
+                            <thead>
+                                <tr>
+                                    <th>Visit Date</th>
+                                    <th>Chief Complaint</th>
+                                    <th>Diagnosis</th>
+                                    <th>ICD-9</th>
+                                    <th>Height</th>
+                                    <th>Weight</th>
+                                    <th>Pulse</th>
+                                    <th>Respiration</th>
+                                    <th>Blood Pressure</th>
+                                    <th>Notes</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><content ID="Encounter1"/>20110423</td>
+                                    <td>Annual Physical Exam</td>
+                                    <td>Essential Hypertension</td>
+                                    <td>401.9</td>
+                                    <td>68 inches</td>
+                                    <td>185</td>
+                                    <td>78</td>
+                                    <td>32</td>
+                                    <td>160/95</td>
+                                    <td>This is an example of Note containing. Use this space for a note.</td>
+                                </tr>
+                                <tr>
+                                    <td><content ID="Encounter2"/>20110424</td>
+                                    <td>bbbbbbbbb</td>
+                                    <td>Essential Hypertension</td>
+                                    <td>401.9</td>
+                                    <td>68 inches</td>
+                                    <td>185</td>
+                                    <td>78</td>
+                                    <td>32</td>
+                                    <td>160/96</td>
+                                    <td>This is an example of Note containing,. Use this space for a note.</td>
+                                </tr>
+                                <tr>
+                                    <td><content ID="Encounter3"/>20110425</td>
+                                    <td>cccccccccc</td>
+                                    <td>Essential Hypertension</td>
+                                    <td>401.9</td>
+                                    <td>69 inches</td>
+                                    <td>185</td>
+                                    <td>78</td>
+                                    <td>32</td>
+                                    <td>160/97</td>
+                                    <td>This is an, exampl,e of Note containing,. Use t,is, space for a note.</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        </p>
+                    </article>
+                    <!-- Section -->
+                    <a name="Procedures" />
+                    <article class="box post post-excerpt">
+                        <header>
+                            <h2><a href="#">Procedures</a></h2>
+                        </header>
+                        <div class="info">
+                            <span class="date">Procedures</span>
+                        </div>
+                        <table border="1" width="100%">
+                            <thead>
+                                <tr>
+                                    <th>Visit Date</th>
+                                    <th>Test</th>
+                                    <th>LOINC</th>
+                                    <th>Value</th>
+                                    <th>Unit</th>
+                                    <th>Short Name</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><content ID="result1"/>20110423</td>
+                                    <td>Free Hemoglobin [Mass/?volume] in Serum</td>
+                                    <td>4635-9 </td>
+                                    <td>12.5</td>
+                                    <td>g/dl</td>
+                                    <td>Serum Hemoglobin</td>
+                                </tr>
+                                <tr>
+                                    <td><content ID="result2"/>20110423</td>
+                                    <td>Hematocrit [Volume Fraction] of Blood</td>
+                                    <td>20570-8 </td>
+                                    <td>40</td>
+                                    <td>%</td>
+                                    <td>Hematocrit</td>
+                                </tr>
+                                <tr>
+                                    <td><content ID="result3"/>20110423</td>
+                                    <td>Erythrocytes [#/?volume] in Blood by Automated count</td>
+                                    <td>789-8</td>
+                                    <td>4.2</td>
+                                    <td>mcL</td>
+                                    <td>Red Blood Count</td>
+                                </tr>
+                                <tr>
+                                    <td><content ID="result4"/>20110423</td>
+                                    <td>Sodium [Moles/?volume] in Serum or Plasma</td>
+                                    <td>2951-2</td>
+                                    <td>137</td>
+                                    <td>mmol/L</td>
+                                    <td>Serum Sodium</td>
+                                </tr>
+                                <tr>
+                                    <td><content ID="result5"/>20110423</td>
+                                    <td>Potassium [Moles/?volume] in Serum or Plasma</td>
+                                    <td>2823-3</td>
+                                    <td>3.4</td>
+                                    <td>mmol/L</td>
+                                    <td>Serum Potassium</td>
+                                </tr>
+                                <tr>
+                                    <td><content ID="result6"/>20110423</td>
+                                    <td>Chloride [Moles/?volume] in Serum or Plasma</td>
+                                    <td>2075-0</td>
+                                    <td>98</td>
+                                    <td>mmol/L</td>
+                                    <td>Serum Chloride</td>
+                                </tr>
+                                <tr>
+                                    <td><content ID="result7"/>20110423</td>
+                                    <td>Chest and Abdomen X-ray AP and PA chest</td>
+                                    <td>42011-7</td>
+                                    <td>Mild LV enlargement</td>
+                                    <td>text</td>
+                                    <td>AP and PA Chest X-ray</td>
+                                </tr>
+                                <tr>
+                                    <td><content ID="result8"/>20110423</td>
+                                    <td>EKG impression</td>
+                                    <td>8601-7</td>
+                                    <td>Possible early LVH</td>
+                                    <td>text</td>
+                                    <td>EKG</td>
+                                </tr>
+                                <tr>
+                                    <td><content ID="result9"/>20110423</td>
+                                    <td>Oxygen saturation in Arterial blood by Pulse oximetry</td>
+                                    <td>59408-5</td>
+                                    <td>92</td>
+                                    <td>%</td>
+                                    <td>Pulse Oxygen</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </article>
+                    <!-- Section -->
+                    <a name="FamilyHistory" />
+                    <article class="box post post-excerpt">
+                        <header>
+                            <h2><a href="#">Family History</a></h2>
+                        </header>
+                        <div class="info">
+                            <span class="date">Family History</span>
+                        </div>
+                        <p>None</p>
+                    </article>
+                    
+                    <!-- Section -->
+                    <a name="SocialHistory" />
+                    <article class="box post post-excerpt">
+                        <header>
+                            <h2><a href="#">Social History</a></h2>
+                        </header>
+                        <div class="info">
+                            <span class="date">Social History</span>
+                        </div>
+                        <table border="1" width="100%">
+                            <thead>
+                                <tr>
+                                    <th>History</th>
+                                    <th>From</th>
+                                    <th>To</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><content ID="soc1"/>Former Smoker</td>
+                                    <td>1984/01/01</td>
+                                    <td>2014/01/01</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </article>
+                    
+                    <!-- Section -->
+                    <a name="Payers" />
+                    <article class="box post post-excerpt">
+                        <header>
+                            <h2><a href="#">Payers</a></h2>
+                        </header>
+                        <div class="info">
+                            <span class="date">Payers</span>
+                        </div>
+                        <p>None</p>
+                    </article>
+                    <!-- Section -->
+                    <a name="AdvanceDirectives" />
+                    <article class="box post post-excerpt">
+                        <header>
+                            <h2><a href="#">Advance Directives</a></h2>
+                        </header>
+                        <div class="info">
+                            <span class="date">Advance Directives</span>
+                        </div>
+                        <p>None</p>
+                    </article>
+                    
+                    <!-- Section -->
+                    <a name="Alerts" />
+                    <article class="box post post-excerpt">
+                        <header>
+                            <h2><a href="#">Alerts</a></h2>
+                        </header>
+                        <div class="info">
+                            <span class="date">Alerts</span>
+                        </div>
+                        <p>None</p>
+                    </article>
+                    
+                    <!-- Section -->
+                    <a name="Medications" />
+                    <article class="box post post-excerpt">
+                        <header>
+                            <h2><a href="#">Medications</a></h2>
+                        </header>
+                        <div class="info">
+                            <span class="date">Medications</span>
+                        </div>
+                        <table border="1" width="100%">
+                            <thead>
+                                <tr>
+                                    <th>Visit Date</th>
+                                    <th>Drug</th>
+                                    <th>NDC</th>
+                                    <th>Type</th>
+                                    <th>Quantity</th>
+                                    <th>Refills</th>
+                                    <th>Sig</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><content ID="Medication1"/>20110423</td>
+                                    <td>Lasix 40 mg</td>
+                                    <td>0039-0060-13 </td>
+                                    <td>Tablet</td>
+                                    <td>90</td>
+                                    <td>4</td>
+                                    <td>1 tablet at bedtime</td>
+                                </tr>
+                                <tr>
+                                    <td><content ID="Medication2"/>20110423</td>
+                                    <td>Propranolol Extended Release 60 mg</td>
+                                    <td>0378-6160-05 </td>
+                                    <td>Tablet</td>
+                                    <td>90</td>
+                                    <td>4</td>
+                                    <td>1 tablet each morning</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </article>
+                    
+                    <!-- Section -->
+                    <a name="Immunizations" />
+                    <article class="box post post-excerpt">
+                        <header>
+                            <h2><a href="#">Immunizations</a></h2>
+                        </header>
+                        <div class="info">
+                            <span class="date">Immunizations</span>
+                        </div>
+                        <p>None</p>
+                    </article>
+                    
+                    <!-- Section -->
+                    <a name="MedicalEquipment" />
+                    <article class="box post post-excerpt">
+                        <header>
+                            <h2><a href="#">Medical Equipment</a></h2>
+                        </header>
+                        <div class="info">
+                            <span class="date">Medical Equipment</span>
+                        </div>
+                        <p>None</p>
+                    </article>
+                    
+                    <!-- Section -->
+                    <a name="VitalSigns" />
+                    <article class="box post post-excerpt">
+                        <header>
+                            <h2><a href="#">Vital Signs</a></h2>
+                        </header>
+                        <div class="info">
+                            <span class="date">Vital Signs</span>
+                        </div>
+                        <p>None</p>
+                    </article>
+                    
+                    <!-- Section -->
+                    <a name="FunctionalStats" />
+                    <article class="box post post-excerpt">
+                        <header>
+                            <h2><a href="#">Functional Stats</a></h2>
+                        </header>
+                        <div class="info">
+                            <span class="date">Functional Stats</span>
+                        </div>
+                        <p>None</p>
+                    </article>
+                    
+                    <!-- Section -->
+                    <a name="Results" />
+                    <article class="box post post-excerpt">
+                        <header>
+                            <h2><a href="#">Results</a></h2>
+                        </header>
+                        <div class="info">
+                            <span class="date">Results</span>
+                        </div>
+                        <table border="1" width="100%">
+                            <thead>
+                                <tr>
+                                    <th>Visit Date</th>
+                                    <th>Test</th>
+                                    <th>LOINC</th>
+                                    <th>Value</th>
+                                    <th>Unit</th>
+                                    <th>Short Name</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><content ID="result1"/>20110423</td>
+                                    <td>Free Hemoglobin [Mass/?volume] in Serum</td>
+                                    <td>4635-9 </td>
+                                    <td>12.5</td>
+                                    <td>g/dl</td>
+                                    <td>Serum Hemoglobin</td>
+                                </tr>
+                                <tr>
+                                    <td><content ID="result2"/>20110423</td>
+                                    <td>Hematocrit [Volume Fraction] of Blood</td>
+                                    <td>20570-8 </td>
+                                    <td>40</td>
+                                    <td>%</td>
+                                    <td>Hematocrit</td>
+                                </tr>
+                                <tr>
+                                    <td><content ID="result3"/>20110423</td>
+                                    <td>Erythrocytes [#/?volume] in Blood by Automated count</td>
+                                    <td>789-8</td>
+                                    <td>4.2</td>
+                                    <td>mcL</td>
+                                    <td>Red Blood Count</td>
+                                </tr>
+                                <tr>
+                                    <td><content ID="result4"/>20110423</td>
+                                    <td>Sodium [Moles/?volume] in Serum or Plasma</td>
+                                    <td>2951-2</td>
+                                    <td>137</td>
+                                    <td>mmol/L</td>
+                                    <td>Serum Sodium</td>
+                                </tr>
+                                <tr>
+                                    <td><content ID="result5"/>20110423</td>
+                                    <td>Potassium [Moles/?volume] in Serum or Plasma</td>
+                                    <td>2823-3</td>
+                                    <td>3.4</td>
+                                    <td>mmol/L</td>
+                                    <td>Serum Potassium</td>
+                                </tr>
+                                <tr>
+                                    <td><content ID="result6"/>20110423</td>
+                                    <td>Chloride [Moles/?volume] in Serum or Plasma</td>
+                                    <td>2075-0</td>
+                                    <td>98</td>
+                                    <td>mmol/L</td>
+                                    <td>Serum Chloride</td>
+                                </tr>
+                                <tr>
+                                    <td><content ID="result7"/>20110423</td>
+                                    <td>Chest and Abdomen X-ray AP and PA chest</td>
+                                    <td>42011-7</td>
+                                    <td>Mild LV enlargement</td>
+                                    <td>text</td>
+                                    <td>AP and PA Chest X-ray</td>
+                                </tr>
+                                <tr>
+                                    <td><content ID="result8"/>20110423</td>
+                                    <td>EKG impression</td>
+                                    <td>8601-7</td>
+                                    <td>Possible early LVH</td>
+                                    <td>text</td>
+                                    <td>EKG</td>
+                                </tr>
+                                <tr>
+                                    <td><content ID="result9"/>20110423</td>
+                                    <td>Oxygen saturation in Arterial blood by Pulse oximetry</td>
+                                    <td>59408-5</td>
+                                    <td>92</td>
+                                    <td>%</td>
+                                    <td>Pulse Oxygen</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </article>
+                    
+                    
+                    <!-- Section -->
+                    <a name="PlanOfCare" />
+                    <article class="box post post-excerpt">
+                        <header>
+                            <h2><a href="#">Plan Of Care</a></h2>
+                        </header>
+                        <div class="info">
+                            <span class="date">Plan</span>
+                        </div>
+                        <p>None</p>
+                    </article>
+                    
+                </div>
+            </div>
+            
+            
+            <!-- Sidebar -->
+            <div id="sidebar">
+                CCD - Marla M. Nixon
+                <!-- Nav -->
+                <nav id="nav">
+                    <ul>
+                        <li class="current"><a href="#BasicInfo">Patient Info and Purpose</a></li>
+                        <li><a href="#Problems">Problems</a></li>
+                        <li><a href="#Encounters">Encounters</a></li>
+                        <li><a href="#Procedures">Procedures</a></li>
+                        <li><a href="#FamilyHistory">Family History</a></li>
+                        <li><a href="#SocialHistory">Social History</a></li>
+                        <li><a href="#Payers">Payers</a></li>
+                        <li><a href="#AdvanceDirectives">Advance Directives</a></li>
+                        <li><a href="#Alerts">Alerts</a></li>
+                        <li><a href="#Medications">Medications</a></li>
+                        <li><a href="#Immunizations">Immunizations</a></li>
+                        <li><a href="#MedicalEquipment">Medical Equipment</a></li>
+                        <li><a href="#VitalSigns">Vital Signs</a></li>
+                        <li><a href="#FunctionalStats">Functional Stats</a></li>
+                        <li><a href="#Results">Results</a></li>
+                        <li><a href="#PlanOfCare">Plan of Care</a></li>
+                    </ul>
+                </nav>
+                
+                <!-- Search -->
+                <section class="box search">
+                    <form method="post" action="#">
+                        <input type="text" class="text" name="search" placeholder="Search" />
+                    </form>
+                </section>
+                
+                <!-- Text -->
+                <section class="box text-style1">
+                    <div class="inner">
+                        <p>
+                        <strong>Note: </strong>This is designed per <a href="http://www.hl7standards.com/blog/2008/07/23/an-overview-of-ccd-templates/">HL7 Standard for CCD</a>.
+                    </div>
+                </section>
+                
+            </div>
+        </div>
+    </body>
+</html>
