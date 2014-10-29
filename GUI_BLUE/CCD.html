@@ -24,7 +24,10 @@
 					<header>
                         <h4>{User Name}</h4>
                         <p>As of {mm/dd/yyyy hh:mi:ss Z}</p>
-                        <hr/>
+                        <form action="process_ccd.jsp">
+  				<input type="file" name="ccd" accept=".xml">
+  				<input type="submit" value="Upload">
+			</form>
                         <p>
                             Name: {patientName}<br />
                             DOB: {mm/dd/yyyy}<br />
