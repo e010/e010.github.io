@@ -24,7 +24,16 @@
           <form method="get" action="CCD.html">
             <fieldset>
                 <h3>What sections would you want to be displayed on CCD?</h3>
-                <div class="row uniform">
+                <div class="row uniform half">
+			<div class="6u">
+				<input type="checkbox" id="demo-copy" name="demo-copy">
+				<label for="demo-copy">Email me a copy of this message</label>
+			</div>
+			<div class="6u">
+				<input type="checkbox" id="demo-human" name="demo-human" checked>
+				<label for="demo-human">I am a human and not a robot</label>
+			</div>
+										
                 <input type="checkbox" name="selection" value="1" checked />Patient Info and Purpose<br />
                 <input type="checkbox" name="selection" value="2" />Problems<br>
                 <input type="checkbox" name="selection" value="3" />Encounters<br>
