@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta content="text/html; charset=windows-1252" http-equiv="content-type">
+    <title>CCD Viewer - CCD</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css">
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap-theme.min.css">
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+    <meta content="Team 7" name="author">
+    <meta content="CS6440 Fall 2014 Final Project" name="description">
+    <meta content="HIT, CCD" name="keywords">
+  </head>
+  <body>
+    <nav class="navbar navbar-default" role="navigation">
+      <div class="container-fluid">
+        <div class="navbar-header"> <button type="button" class="navbar-toggle collapsed"
+
+            data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+            <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span>
+            <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+          <img style="width: 117px; height: 65px;" title="Logo" alt="Logo" src="http://e010.github.io//GUI_BLUE/images/logo.png">
+          &nbsp; &nbsp; &nbsp;&nbsp;&nbsp; </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav">
+            <li><a href="#">Dynamic Links</a></li>
+            <li><a href="#">Link</a></li>
+            <li><a href="#">Link</a></li>
+            <li><a href="#">Link</a></li>
+            <li><a href="#">Link</a></li>
+            <li><a href="#">Link</a></li>
+            <li><a href="#">Link</a></li>
+            <li><a href="#">Link</a></li>
+            <li><a href="#">Link</a></li>
+            <li><a href="#">Link</a></li>
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-sm-3 col-md-2 sidebar"> </div>
+              </div>
+            </div>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li>
+              <form class="navbar-form"> Select CCD (xml only):
+                <div class="form-group"><input class="form-control btn btn-default"
+
+                    name="ccd_upload" accept=".xml" type="file"> </div>
+                <button type="submit" class="btn btn-default">Upload</button> </form>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <table style="width: 100%; height: 500px;" border="0">
+      <tbody>
+        <tr>
+          <td style="text-align: center;">This is where the dynamic content goes<br>
+          </td>
+          <td style="width: 15%;">
+            <div class="panel panel-info">
+              <div class="panel-heading">
+                <h3 class="panel-title">Patient Information</h3>
+              </div>
+              <div class="panel-body"> Name: {$fname $lname}<br>
+                DOB: {$DOB in (mm/dd/yyy)}<br>
+              </div>
+            </div>
+            <div class="panel panel-info">
+              <div class="panel-heading">
+                <h3 class="panel-title">Current Conditions</h3>
+              </div>
+              <div class="panel-body"> Condition 1<br>
+                Condition 2<br>
+                Condition 3<br>
+                <br>
+              </div>
+            </div>
+            <div class="panel panel-info">
+              <div class="panel-heading">
+                <h3 class="panel-title">Current Medications</h3>
+              </div>
+              <div class="panel-body"> Medication 1<br>
+                Medication 2<br>
+                Medication 3<br>
+                <br>
+              </div>
+            </div>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <hr>
+    <footer>
+      <p style="text-align: right; color: #999999;"> © Clarity Visualization
+        2014&nbsp; <br>
+        Phillip Ratliff, Marcus King, Yeeling Lam&nbsp; </p>
+    </footer>
+    
+  </body>
+</html>
