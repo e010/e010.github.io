@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en-us">
   <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta content="text/html; charset=windows-1252" http-equiv="content-type">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>CCD Viewer - CCD</title>
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css">
@@ -15,44 +15,47 @@
     <meta content="HIT, CCD" name="keywords">
   </head>
   <body>
-    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
-      <div class="container-fluid">
-        <div class="navbar-header"> <button type="button" class="navbar-toggle collapsed"
+    <div class="container-fluid">
+      <div class="navbar-header"><img style="width: 115px; height: 65px;" title="Logo"
 
-            data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-            <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span>
-            <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
-          <img style="width: 117px; height: 65px;" title="Logo" alt="Logo" src="http://e010.github.io//GUI_BLUE/images/logo.png">
-          &nbsp; &nbsp; &nbsp;&nbsp;&nbsp; </div>
-        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-          <ul class="nav navbar-nav">
-            <li><a href="#">Dynamic Links</a></li>
-            <li><a href="#">Link</a></li>
-            <li><a href="#">Link</a></li>
-            <li><a href="#">Link</a></li>
-            <li><a href="#">Link</a></li>
-            <li><a href="#">Link</a></li>
-            <div class="container-fluid">
-              <div class="row">
-                <div class="col-sm-3 col-md-2 sidebar"> </div>
+          alt="Logo" src="http://e010.github.io/GUI_BLUE/images/logo.png"></div>
+      <div class="navbar-header"> <button type="button" class="navbar-toggle collapsed"
+
+          data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"> <span
+
+            class="sr-only">Toggle navigation</span> <span class="icon-bar"></span>
+          <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+        <nav class="navbar navbar-default alert-info" role="navigation">
+          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+              <li><a href="#">Dynamic Links</a></li>
+              <li><a href="#">Link</a></li>
+              <li><a href="#">Link</a></li>
+              <li><a href="#">Link</a></li>
+              <li><a href="#">Link</a></li>
+              <li><a href="#">Link</a></li>
+              <div class="container-fluid">
+                <div class="row">
+                  <div class="col-sm-3 col-md-2 sidebar"> </div>
+                </div>
               </div>
-            </div>
-          </ul>
-          <ul class="nav navbar-nav navbar-right">
-            <li>
-              <form class="navbar-form"> Select CCD (xml only):
-                <div class="form-group"><input class="form-control btn btn-default"
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+              <li>
+                <form class="navbar-form"> Select CCD (xml only):
+                  <div class="form-group"><input class="form-control btn btn-default"
 
-                    name="ccd_upload" accept=".xml" type="file"> </div>
-                <button type="submit" class="btn btn-default">Upload</button> </form>
-            </li>
-          </ul>
-        </div>
+                      name="ccd_upload" accept=".xml" type="file"> </div>
+                  <button type="submit" class="btn btn-default">Upload</button>
+                </form>
+              </li>
+            </ul>
+          </div>
+        </nav>
       </div>
-    </nav>
+    </div>
     <table style="width: 100%; height: 500px;" border="0">
       <tbody>
-      <tr><td style="height: 100px;"></td></tr>
         <tr>
           <td style="text-align: center;">This is where the dynamic content goes<br>
           </td>
@@ -72,7 +75,6 @@
               <div class="panel-body"> Condition 1<br>
                 Condition 2<br>
                 Condition 3<br>
-                <br>
               </div>
             </div>
             <div class="panel panel-info">
@@ -82,9 +84,10 @@
               <div class="panel-body"> Medication 1<br>
                 Medication 2<br>
                 Medication 3<br>
-                <br>
               </div>
             </div>
+          </td>
+          <td style="width: 1%;"><br>
           </td>
         </tr>
       </tbody>
