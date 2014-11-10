@@ -4,121 +4,234 @@
     <meta content="text/html; charset=windows-1252" http-equiv="content-type">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>CCD Viewer - CCD</title>
-    <link rel="stylesheet" href="customized.css">
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css">
     <!-- Optional theme -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="customized.css">
     <!-- Latest compiled and minified JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
-    <meta content="Team 7" name="author">
+    <meta content="Team 7 - Phillip Ratliff, Marcus King, Yeeling Lam" name="author">
     <meta content="CS6440 Fall 2014 Final Project" name="description">
     <meta content="HIT, CCD" name="keywords">
   </head>
   <body>
     <nav class="navbar navbar-fixed-top alert-info" role="navigation">
       <div class="container-fluid">
-        <div class="col-md-2"><br>
-          <img class="img-responsive" title="Logo" alt="Logo" src="http://e010.github.io/GUI_BLUE/images/logo.png">
-        </div>
-        <div class="col-md-2"><br>
-          <h3 class="text-info">Marla M. Dixon</h3>
-          <p class="text-info">Age: <strong>58</strong></p>
-          <p class="text-info">DOB: <strong>10/1/1968</strong></p>
-        </div>
-        <div class="col-md-2"><br>
-          <div class="panel panel-danger">
-            <div class="panel-heading">
-              <h5 class="panel-title">Alerts</h5>
+        <div class="navbar-header"> <button type="button" class="navbar-toggle collapsed"
+
+            data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span>
+            <span class="icon-bar"></span> <span class="icon-bar"></span> </button></div>
+        <div id="navbar" class="collapse navbar-collapse">
+          <div class="row">
+            <div class="col-md-6">
+              <p class="text-muted"><span style="color: silver;">©2014 by
+                  Phillip Ratliff, Marcus King, Yeeling Lam</span></p>
             </div>
-            <div class="panel-body text-danger"><strong>Alert 1 </strong><br>
-              <strong>Alert 2 </strong><br>
-              <a href="#">More Details</a> </div>
+            <div class="col-md-6">
+              <form>
+                <p class="text-right text-success"><span style="font-style: italic;">Logged
+                    in as <span style="font-weight: bold;">{$login user name}</span>
+                    since <span style="font-weight: bold;">{$login timestamp}</span></span>
+                  <button type="submit" class="btn btn-info btn-xs" formaction="index.html">Logout</button>
+                </p>
+              </form>
+            </div>
+          </div>
+          <div class="row">
+            <div class="container-fluid">
+              <div class="col-md-2"> <img style="width: 200px; height: 125px;"
+
+                  class="img-responsive" title="Logo" alt="Logo" src="http://e010.github.io/GUI_BLUE/images/logo.png">
+              </div>
+              <div class="col-md-2">
+                <h3 class="text-info">Marla M. Dixon</h3>
+                <p class="text-info">Age: <strong>58</strong></p>
+                <p class="text-info">DOB: <strong>10/1/1968</strong></p>
+              </div>
+              <div class="col-md-2">
+                <div class="panel panel-danger">
+                  <div class="panel-heading">
+                    <h5 class="panel-title">Alerts</h5>
+                  </div>
+                  <div class="panel-body text-danger"><strong>Alert 1 </strong><br>
+                    <strong>Alert 2 </strong><br>
+                    <a href="#alerts">More Details</a> </div>
+                </div>
+              </div>
+              <div class="col-md-2">
+                <div class="panel panel-info">
+                  <div class="panel-heading">
+                    <h5 class="panel-title">Conditions</h5>
+                  </div>
+                  <div class="panel-body"> Condition 1<br>
+                    Condition 2<br>
+                    <a href="#conditions">More Details</a> </div>
+                </div>
+              </div>
+              <div class="col-md-2">
+                <div class="panel panel-info">
+                  <div class="panel-heading">
+                    <h5 class="panel-title">Medications</h5>
+                  </div>
+                  <div class="panel-body"> Medication 1<br>
+                    Medication 2<br>
+                    <a href="#medications">More Details</a> </div>
+                </div>
+              </div>
+              <div class="col-md-2">
+                <div class="panel panel-info">
+                  <div class="panel-heading">
+                    <h5 class="panel-title">Labs</h5>
+                  </div>
+                  <div class="panel-body">Result 1<br>
+                    Result 2<br>
+                    <a href="#labs">More Details</a> </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
-        <div class="col-md-2"><br>
-          <div class="panel panel-info">
-            <div class="panel-heading">
-              <h5 class="panel-title">Conditions</h5>
-            </div>
-            <div class="panel-body"> Condition 1<br>
-              Condition 2<br>
-              <a href="#">More Details</a> </div>
-          </div>
-        </div>
-        <div class="col-md-2"><br>
-          <div class="panel panel-info">
-            <div class="panel-heading">
-              <h5 class="panel-title">Medications</h5>
-            </div>
-            <div class="panel-body"> Medication 1<br>
-              Medication 2<br>
-              <a href="#">More Details</a> </div>
-          </div>
-        </div>
-        <div class="col-md-2"><br>
-          <div class="panel panel-info">
-            <div class="panel-heading">
-              <h5 class="panel-title">Labs</h5>
-            </div>
-            <div class="panel-body">Result 1<br>
-              Result 2<br>
-              <a href="#">More Details</a> </div>
-          </div>
-        </div>
-      </div>
+        <!--/.nav-collapse --> </div>
     </nav>
-    <div class="container-fluid"> <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-    </div>
     <div class="container-fluid">
       <div class="row">
-        <div class="col-md-12"> Main Content Area
-          <p class="text-left"> </p>
-          <div class="btn-group"> <button style="margin-left: 20px;" type="button"
+        <div class="col-sm-3 col-md-2 sidebar">
+          <ul class="nav nav-sidebar">
+            <li><a href="#summary" class="text-primary">Summary</a></li>
+            <li><a href="#alerts" class="text-danger">Alerts</a></li>
+            <li><a href="#conditions" class="text-primary">Conditions &amp;
+                Problems</a></li>
+            <li><a href="#medications" class="text-primary">Medications</a></li>
+            <li><a href="#labs" class="text-primary">Labs &amp; Procedures</a></li>
+          </ul>
+          <hr>
+          <ul class="nav nav-sidebar">
+            <li><a href="#encounters" class="text-success">Encounters / Vital
+                Signs</a></li>
+            <li><a href="#history">Family &amp; Social History</a></li>
+            <li><a href="#immunizations">Immunizations</a></li>
+            <li><a href="#plans" class="text-success">Plan of Care</a></li>
+            <li><a href="#stats">Functional Stats</a></li>
+            <li><a href="#payer">Insurance &amp; Payer</a></li>
+          </ul>
+        </div>
+        <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main"> <a
 
-              class="btn btn-primary">Selection Menu</button> <button type="button"
-
-              class="btn btn-primary dropdown-toggle" data-toggle="dropdown"> <span
-
-                class="caret"></span> <span class="sr-only">Toggle Dropdown</span>
-            </button>
-            <ul class="dropdown-menu" role="menu">
-              <li><a href="#">Action</a></li>
-              <li><a href="#">Another action</a></li>
-              <li><a href="#">Something else here</a></li>
-              <li class="divider"><br>
-              </li>
-              <li><a href="#">Separated link</a></li>
-            </ul>
+            name="summary"></a>
+          <div class="row">
+            <div class="panel panel-primary">
+              <div class="panel-heading">
+                <h3 class="panel-title">Summary of Information</h3>
+              </div>
+              <div class="panel-body text-primary"> {$summary} </div>
+            </div>
+          </div>
+          <a name="alerts"></a>
+          <div class="row">
+            <div class="panel panel-danger">
+              <div class="panel-heading">
+                <h3 class="panel-title">Alerts</h3>
+              </div>
+              <div class="panel-body">
+                <ul>
+                  <li>alert 1</li>
+                  <li>alert 1</li>
+                  <li>alert 1</li>
+                  <li>alert 1</li>
+                  <li>alert 1</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <a name="conditions"></a>
+          <div class="row">
+            <div class="panel panel-info">
+              <div class="panel-heading">
+                <h3 class="panel-title">Conditions and Problems</h3>
+              </div>
+              <div class="panel-body"> {$details} </div>
+            </div>
+          </div>
+          <a name="medications"></a>
+          <div class="row">
+            <div class="panel panel-info">
+              <div class="panel-heading">
+                <h3 class="panel-title">Medications</h3>
+              </div>
+              <div class="panel-body"> {$medications} </div>
+            </div>
+          </div>
+          <a name="labs"></a>
+          <div class="row">
+            <div class="panel panel-info">
+              <div class="panel-heading">
+                <h3 class="panel-title">Lab and Procedure Results</h3>
+              </div>
+              <div class="panel-body"> {$labs} </div>
+            </div>
+          </div>
+          <a name="encounters"></a>
+          <div class="row">
+            <div class="panel panel-primary">
+              <div class="panel-heading">
+                <h3 class="panel-title">Encounters &amp; Vital Signs</h3>
+              </div>
+              <div class="panel-body text-primary"> {$details} </div>
+            </div>
+          </div>
+          <a name="history"></a>
+          <div class="row">
+            <div class="panel panel-info">
+              <div class="panel-heading">
+                <h3 class="panel-title">Family &amp; Social History</h3>
+              </div>
+              <div class="panel-body"> {$details} </div>
+            </div>
+          </div>
+          <a name="immunizations"></a>
+          <div class="row">
+            <div class="panel panel-info">
+              <div class="panel-heading">
+                <h3 class="panel-title">Immunizations</h3>
+              </div>
+              <div class="panel-body"> {$details} </div>
+            </div>
+          </div>
+          <a name="plans"></a>
+          <div class="row">
+            <div class="panel panel-primary">
+              <div class="panel-heading">
+                <h3 class="panel-title">Plan of Care</h3>
+              </div>
+              <div class="panel-body text-primary"> {$details} </div>
+            </div>
+          </div>
+          <a name="stats"></a>
+          <div class="row">
+            <div class="panel panel-info">
+              <div class="panel-heading">
+                <h3 class="panel-title">Functional Statistics</h3>
+              </div>
+              <div class="panel-body"> {$details} </div>
+            </div>
+          </div>
+          <a name="payer"></a>
+          <div class="row">
+            <div class="panel panel-info">
+              <div class="panel-heading">
+                <h3 class="panel-title">Insurance &amp; Payer</h3>
+              </div>
+              <div class="panel-body"> {$details} </div>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-    <footer class="footer">
-      <div class="row">
-        <div class="col-md-6">
-          <p class="text-left text-muted">&nbsp;Login As <span style="font-weight: bold;">{$login
-              user name}</span><br>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; since <span style="font-weight: bold;">{$login
-              timestamp}</span></p>
-        </div>
-        <div class="col-md-6">
-          <p class="text-muted text-right">© Clarity Visualization 2014 &nbsp; <br>
-            Phillip Ratliff, Marcus King, Yeeling Lam &nbsp; </p>
-        </div>
-      </div>
-    </footer>
-    <!-- Bootstrap core JavaScript ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+      <!-- Bootstrap core JavaScript ================================================== -->
+      <!-- Placed at the end of the document so the pages load faster -->
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+      <script src="dist/js/bootstrap.min.js"></script> </div>
     
   </body>
 </html>
