@@ -17,6 +17,19 @@
   </head>
   <body>
      <div class="container-fluid">
+      <div class="row">
+          <div class="col-md-6"></div>
+          <div class="col-md-6">
+            <p class="text-right text-muted">
+	                <span style="font-style: italic; padding-right: 15px;">Logged in as
+	                  <span style="font-weight: bold;"><%= org.springframework.security.core.context.SecurityContextHolder.getContext().getAuthentication().getName()%></span>
+	                    since
+	                  <span style="font-weight: bold;"><%= ((org.joda.time.DateTime)session.getAttribute("loggedTime")).toString("hh:mm dd/MM/yyyy") %></span>
+	                </span>
+	                <a class="btn btn-success btn-xs" style="margin-top: 2px;" href="<c:url value="/j_spring_security_logout" />">Logout</a>
+	           </p>
+          </div>
+      </div>
      <div class="row">
       <div class="col-md-4"></div>
       <div class="col-md-4"><img class="img-responsive" title="Logo" alt="Logo" src="http://e010.github.io//GUI_BLUE/images/logo.png"><br><br></div>
