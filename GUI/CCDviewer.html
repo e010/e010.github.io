@@ -122,18 +122,43 @@
         </div>
         <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
           <div class="row">
-              <div class="alert alert-warning alert-dismissible" role="alert">
-                <button type="btn btn-xs btn-block" class="close" data-dismiss="alert">
-                <span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-                <strong>Screening:</strong> Clinical Depreesion Indication follow up need <a href="#" class="alert-link">Plan Details</a>
+            <div class="panel panel-warning">
+              <div class="panel-heading">
+                <h4 class="panel-title">CDS(Clincal Decision Support)
+                  Notifications <small><a onclick="JavaScript:toggleId('id_alertbox');"><span
+
+                        class="glyphicon glyphicon-th-list" aria-hidden="true" title="Click to open/close CDS notifications"></span><span
+
+                        class="sr-only">Open/Close</span></a></small></h4>
               </div>
-          </div>
-          <div class="row">
-              <div class="alert alert-warning alert-dismissible" role="alert">
-                <button type="btn btn-xs btn-block" class="close" data-dismiss="alert">
-                <span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-                <strong>Blood Pressure:</strong> BP increases, please address at this visit.</a>
+              <div class="panel-body" id="id_alertbox">
+                <ul class="list-group">
+                  <li id="id_a1" class="list-group-item list-group-item-warning">
+                    <span><button type="btn btn-xs btn-block" class="close" onclick="JavaScript:hideSection('id_a1');"
+
+                        title="Click to mark this message as read and remove from display.">
+                        <span aria-hidden="true">×</span><span class="sr-only">Close</span></button></span>
+                    <span class="glyphicon glyphicon-arrow-right" aria-hidden="true"></span>
+                    Screening: Clinical depression screen indicated click to see
+                    <a hre="#labs">Labs</a> or <a hre="#plans">Plan</a>.</li>
+                  <li id="id_a2" class="list-group-item list-group-item-warning">
+                    <span><button type="btn btn-xs btn-block" class="close" onclick="JavaScript:hideSection('id_a2');"
+
+                        title="Click to mark this message as read and remove from display.">
+                        <span aria-hidden="true">×</span><span class="sr-only">Close</span></button></span>
+                    <span class="glyphicon glyphicon-arrow-right" aria-hidden="true"></span>
+                    Blood Pressure Control: BP increases, please provide plan at
+                    this visit.</li>
+                  <li id="id_a3" class="list-group-item list-group-item-warning">
+                    <span><button type="btn btn-xs btn-block" class="close" onclick="JavaScript:hideSection('id_a3');"
+
+                        title="Click to mark this message as read and remove from display.">
+                        <span aria-hidden="true">×</span><span class="sr-only">Close</span></button></span>
+                    <span class="glyphicon glyphicon-arrow-right" aria-hidden="true"></span>
+                    Documentation: Confirm documentation of current medication list.  <a hre="#medications">View Medications</a></li>
+                </ul>
               </div>
+            </div>
           </div>
           <a name="summary"></a>
           <div class = "row">
